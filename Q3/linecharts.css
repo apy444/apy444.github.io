@@ -1,0 +1,47 @@
+.lines {
+    fill: none;
+    stroke-width: 1.5px;
+}
+
+circle {
+    stroke-width: 0px;
+}
+
+.circles {
+    stroke-width: 0px;
+}
+text {
+    fill: #000;
+    font: 11px sans-serif;
+    pointer-events: none;
+}
+.title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.ranklabels {
+    text-anchor: middle;
+    dominant-baseline: middle;
+    fill: white;
+    font-size: 8px;
+}
+text.symbol {
+    fill: white;
+    text-anchor: middle;
+    dominant-baseline: middle;
+    font-size: 7px;
+}
+text.username {
+    font-size: 12px;
+    fill: hotpink;
+    font-weight: bold;
+    text-anchor: end;
+    /* dominant-baseline: middle; */
+}
+
+@media print {
+    .break {
+        page-break-after: always;
+    }
+}
