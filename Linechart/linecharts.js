@@ -1,8 +1,8 @@
 const w = 1000;
 const h = 500;
 //  ----   padding   ------
-const pLeft = 80;
-const pRight = 120;
+const pLeft = 100;
+const pRight = 130;
 const pTop = 60;
 const pBottom = 60;
 
@@ -197,14 +197,14 @@ d3.dsv(",", "boardgame_ratings.csv", function (d) {
         symbol
             .append("circle")
             .attr("cx", w - pLeft / 2 - 10)
-            .attr("cy", h - pBottom - 12)
-            .attr("r", 8)
+            .attr("cy", h - pBottom - 14)
+            .attr("r", 9)
             .style("fill", "black");
         symbol
             .append("text")
             .attr("class", "symbol")
             .attr("x", w - pLeft / 2 - 10)
-            .attr("y", h - pBottom - 12)
+            .attr("y", h - pBottom - 14)
             .text("rank");
         symbol
             .append("text")
@@ -213,7 +213,7 @@ d3.dsv(",", "boardgame_ratings.csv", function (d) {
             .text("BoardGameGeek Rank")
             .style("text-anchor", "middle")
             .style("dominant-baseline", "hanging")
-            .style("font-size", "8px");
+            .style("font-size", "10px");
     };
 
     //------------------------------------
@@ -280,7 +280,7 @@ d3.dsv(",", "boardgame_ratings.csv", function (d) {
     const logScale = d3
         .scaleLog()
         .domain([
-            1,
+            0.000001,
             d3.max(gamesData, (d) => {
                 return d.values.slice(-1)[0].count;
             }),
