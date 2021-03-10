@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+	<title>Boardgames on the Map</title><!-- add title -->
+	
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="../lib/d3.v5.min.js"></script>
+    <script type="text/javascript" src="../lib/d3-dsv.min.js"></script>
+    <script type="text/javascript" src="../lib/d3-geo-projection.v2.min.js"></script>
+    <script type="text/javascript" src="../lib/d3-legend.min.js"></script>
+    <script type="text/javascript" src="../lib/d3-tip.min.js"></script>
+    <script type="text/javascript" src="../lib/topojson.v2.min.js"></script>
+    <link rel="stylesheet" href="choropleth.css" />
+	
+	<style>
+	
+	</style>
+</head>
+
+
+<body>
+    <h1>Average Rating of Board Games Across the World</h1>
+	
+	<form>
+        <label for='boardgames' id='label'>Select Board Game:  </label>
+        <select name='boardgames' id='menu'>
+        </select>
+    </form><!-- Create dropdown element here. Options should be added after reading in game file, they should not be created here.-->
+	
+	<!-- append visualization svg to this div-->
+    <div id="choropleth"></div>
+
+    <script type='text/javascript' src='choropleth.js'>
+	
+
+		// enter code to define margin and dimensions for svg
+		
+		// enter code to create svg
+		
+		// enter code to create color scale
+		
+		// enter code to define tooltip
+        
+		// enter code to define projection and path required for Choropleth
+
+		// define any other global variables 
+
+        // Promise.all([
+            // enter code to read files
+			
+        // ]).then(
+            // enter code to call ready() with required arguments
+			
+        // );
+		
+		// this function should be called once the data from files have been read
+		// world: topojson from world_countries.json
+		// gameData: data from ratings-by-country.csv
+		
+        function ready(error, world, gameData) {
+            // enter code to extract all unique games from gameData
+
+            // enter code to append the game options to the dropdown
+			
+            // event listener for the dropdown. Update choropleth and legend when selection changes. Call createMapAndLegend() with required arguments.
+			
+            // create Choropleth with default option. Call createMapAndLegend() with required arguments. 
+        }
+
+		// this function should create a Choropleth and legend using the world and gameData arguments for a selectedGame
+		// also use this function to update Choropleth and legend when a different game is selected from the dropdown
+        function createMapAndLegend(world, gameData, selectedGame){ 
+		
+			
+        }
+    </script>
+
+</body>
+
+</html>

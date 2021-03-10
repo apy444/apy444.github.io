@@ -1,0 +1,62 @@
+.lines {
+    fill: none;
+    stroke-width: 2px;
+}
+
+.circles {
+    stroke-width: 0px;
+}
+
+text {
+    fill: #000;
+    font-size: 12px;
+    font-family: "avenir next", sans-serif;
+    pointer-events: none;
+}
+.title {
+    font-family: "avenir next", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.x-label {
+    font-size: 14px;
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+.y-label {
+    font-size: 14px;
+    text-anchor: middle;
+    dominant-baseline: hanging;
+}
+
+.username {
+    font-size: 14px;
+    font-family: "avenir next", sans-serif;
+    font-weight: bold;
+    text-anchor: middle;
+    /* dominant-baseline: hanging; */
+}
+
+.legend {
+    dominant-baseline: middle;
+    text-anchor: end;
+}
+.bar-title {
+    font-size: 14px;
+    font-family: "avenir next", sans-serif;
+    font-weight: bold;
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+.bar-gamenames * {
+    font-family: "avenir next", sans-serif;
+    font-weight: bold;
+}
+
+.bar-axis-x .tick line {
+    stroke: rgb(180, 180, 180);
+}
+/* .domain {
+    stroke: black;
+} */
